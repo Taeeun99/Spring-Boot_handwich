@@ -1,0 +1,64 @@
+
+/* 데스크탑 */
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	/*background-color: #4AB34A;*/
+	font-family: 'STIX Two Math';
+	margin_bottom: 100px;
+}
+
+.sub_title {
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.sub_btn {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.sub_btn_hr {
+	width: 60vw;
+	max-width: 300px;
+}
+
+.sub_nav {
+	width: 60vw;
+	max-width: 300px;
+	height: auto;
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.sub_nav a {
+	color: #5a5a5a;
+	font-size: 20px;
+}
+
+.sub_nav a:hover {
+	color: #323232;
+	cursor: pointer;
+}
+
+/*=============================================================*/
+
+@media screen and (max-width:1199px) { /* 타블렛 가로 */
+
+}
+
+@media screen and (max-width:899px) { /* 모바일 가로, 타블렛 세로 */
+
+}
+
+@media screen and (max-width:599px) { /* 모바일 세로 */
+
+
+	
+}

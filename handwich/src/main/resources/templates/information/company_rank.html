@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" href="../css/information/company_rank.css">
+</head>
+
+<body>
+  <!-- header.html 파일을 포함 -->
+    <header th:replace="include/header.html"></header>
+   <!-- 내용부분 --------------------------------------------------->
+	<div class="sub_title">
+		<a class="sub_btn"> 인사말 </a> <br> <br>
+		<hr class="sub_btn_hr">
+
+		<br> <span class="sub_nav"> <a href="overview" >회사개요</a> <a
+			href="history">회사 연혁</a> <a href="rank"  style="color:#282828; font-weight:450;" >조직도</a>
+	</div>
+
+<div>
+대표 : 한동욱
+사원 
+이땡구
+</div>
+   <!-- 푸터부분 포함 -->
+    <footer th:replace="include/footer.html"></footer>
+   
+   <script src="../js/home.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,165 @@
+/* 데스크탑 */
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	/*background-color: #4AB34A;*/
+	font-family: 'STIX Two Math';
+	margin_bottom: 100px;
+}
+
+.sub_title {
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.sub_btn {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.sub_btn_hr {
+	width: 60vw;
+	max-width: 300px;
+}
+
+.sub_nav {
+	width: 60vw;
+	max-width: 300px;
+	height: auto;
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.sub_nav a {
+	color: #5a5a5a;
+	font-size: 20px;
+}
+
+.sub_nav a:hover {
+	color: #323232;
+	cursor: pointer;
+}
+
+.overview_div {
+	display: flex;
+	margin: 100px auto;
+	width: 70vw;
+}
+
+.text_div {
+	width: 50vw;
+	font-size: 20px;
+}
+
+.text_div span {
+	border: 1px solid blue;
+}
+
+.content {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.title {
+	width: 15vw;
+	font-weight: 700;
+}
+
+.explane {
+	width: 40vw;
+}
+
+.img_div {
+	border: 1px solid yellow;
+	width: 20vw;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.img_div img {
+	width: 20vw;
+	height: 350px;
+	object-fit: cover;
+}
+
+@media screen and (max-width:1199px) { /* 타블렛 가로 */
+	.overview_div {
+		display: flex;
+		margin: 100px auto;
+		width: 70vw;
+	}
+	.text_div {
+		width: 70vw;
+		font-size: 20px;
+	}
+	.content {
+		display: flex;
+		margin-bottom: 30px;
+	}
+	.title {
+		width: 20vw;
+		font-weight: 700;
+	}
+	.explane {
+		width: 50vw;
+	}
+	.img_div {
+		display: none;
+	}
+}
+
+@media screen and (max-width:899px) { /* 모바일 가로, 타블렛 세로 */
+	.overview_div {
+		display: flex;
+		margin: 100px auto;
+		width: 70vw;
+	}
+	.text_div {
+		width: 70vw;
+		font-size: 15px;
+	}
+	.content {
+		display: flex;
+		margin-bottom: 50px;
+	}
+	.title {
+		width: 20vw;
+		font-weight: 700;
+	}
+	.explane {
+		width: 50vw;
+	}
+
+
+}
+
+@media screen and (max-width:599px) { /* 모바일 세로 */
+
+.overview_div {
+		display: flex;
+		margin: 100px auto;
+		width: 70vw;
+	}
+	.text_div {
+		width: 70vw;
+		font-size: 10px;
+	}
+	.content {
+		display: flex;
+		margin-bottom: 30px;
+	}
+	.title {
+		width: 20vw;
+		font-weight: 700;
+	}
+	.explane {
+		width: 50vw;
+	}
+	
+}

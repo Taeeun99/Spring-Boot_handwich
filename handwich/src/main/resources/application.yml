@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+# database \uC5F0\uB3D9 \uC124\uC815
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    \uAC01\uC790 PC\uC5D0 \uB9CC\uB4E4\uC5B4\uB193\uC740 Database\uC774\uB984\uC744 \uC368\uC57C \uD569\uB2C8\uB2E4.
+    url: jdbc:mysql://localhost:3306/handwich_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+#    mysql\uC5D0 \uC0DD\uC131\uD55C \uC0AC\uC6A9\uC790 \uACC4\uC815 \uC815\uBCF4\uB97C \uC368\uC57C \uD569\uB2C8\uB2E4.
+    username: root
+    password: 990310
+  thymeleaf:
+    cache: false
+
+  # spring data jpa \uC124\uC815
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update   
+#      create : 프로젝트를 실행할때마다 ddal을 계속해서 다시 생성 / 
+#       update : 바뀌는것이 있을때만 바뀌고 그 외에는 계속 유지

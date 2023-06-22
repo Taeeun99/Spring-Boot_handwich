@@ -1,0 +1,147 @@
+/* 데스크탑 */
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	/*background-color: #4AB34A;*/
+	font-family: 'STIX Two Math';
+	margin_bottom: 100px;
+}
+
+.sub_title {
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.sub_btn {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.sub_btn_hr {
+	width: 60vw;
+	max-width: 300px;
+}
+
+.sub_nav {
+	width: 60vw;
+	max-width: 300px;
+	height: auto;
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.sub_nav a {
+	color: #5a5a5a;
+	font-size: 20px;
+}
+
+.sub_nav a:hover {
+	color: #323232;
+	cursor: pointer;
+}
+
+/*=============================================================*/
+.big_div {
+	width: 70vw;
+	margin: 100px auto;
+	margin-bottom: 300px;
+}
+
+.img_div img {
+	width: 70vw;
+	margin-bottom: 100px;
+}
+
+.history_div {
+	width: 70vw;
+	border: 1px solid red;
+	display: flex;
+}
+
+.year {
+	color: #0436a3;
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.month {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.history_div  th {
+	padding-bottom: 20px;
+	vertical-align: top;
+}
+
+.history_div td {
+	padding-bottom: 20px;
+	font-size: 20px;
+	vertical-align: top;
+}
+
+@media screen and (max-width:1199px) { /* 타블렛 가로 */
+	.year {
+		color: #0436a3;
+		font-weight: 700;
+		font-size: 20px;
+	}
+	.month {
+		font-size: 18px;
+	}
+	.history_div  th {
+		padding-bottom: 18px;
+		text-align: top;
+	}
+	.history_div td {
+		padding-bottom: 18px;
+		font-size: 17px;
+		vertical-align: top;
+	}
+}
+
+@media screen and (max-width:899px) { /* 모바일 가로, 타블렛 세로 */
+	.year {
+		color: #0436a3;
+		font-weight: 700;
+		font-size: 18px;
+	}
+	.month {
+		font-size: 13px;
+	}
+	.history_div  th {
+		padding-bottom: 12px;
+		text-align: top;
+	}
+	.history_div td {
+		padding-bottom: 12px;
+		font-size: 13px;
+		vertical-align: top;
+	}
+}
+
+@media screen and (max-width:599px) { /* 모바일 세로 */
+	.year {
+		color: #0436a3;
+		font-weight: 700;
+		font-size: 15px;
+	}
+	.history_div  th {
+		padding-bottom: 12px;
+		text-align: top;
+	}
+	.history_div  td {
+		font-size: 10px;
+	}
+	.history_div td {
+		padding-bottom: 12px;
+		font-size: 10px;
+		vertical-align: top;
+	}
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" href="../css/information/company_overview.css">
+</head>
+
+<body>
+  <!-- header.html 파일을 포함 -->
+    <header th:replace="include/header.html"></header>
+   <!-- 내용부분 --------------------------------------------------->
+   <div class="sub_title">
+		<a class="sub_btn"> 인사말 </a> <br> <br>
+		<hr class="sub_btn_hr">
+
+		<br> <span class="sub_nav"> <a href="overview" style="color:#282828; font-weight:450;">회사개요</a> <a
+			href="history">회사 연혁</a> <a href="rank">조직도</a>
+	</div>
+
+
+	<div class="overview_div">
+		<div class="text_div">
+			<div class="content">
+				<div class="title">
+					<a>🔹 회사명</a>
+				</div>
+				<div class="explane">
+					<a>주식회사 핸드위치 (Crop. HANDWICH)</a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="title">
+					<a>🔹 설립일</a>
+				</div>
+				<div class="explane">
+					<a>2020년 03년 30일</a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="title">
+					<a>🔹 대표이사</a>
+				</div>
+				<div class="explane">
+					<a>한동욱 </a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="title">
+					<a>🔹 주요업무</a>
+				</div>
+				<div class="explane">
+					<a>마이데이터 전문 기술 및 다중 프로젝트<br> 업무 시스템 개발을 통한 사용 친화적 설계<br>
+						솔루션을 자체 개발하여 차별화된 서비스와 경쟁력 확보
+					</a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="title">
+					<a>🔹 주요 기반 기술</a>
+				</div>
+				<div class="explane">
+					<a> 마이데이터</a>
+				</div>
+			</div>
+		</div>
+		<div class="img_div">
+			<img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/3070fb84-f593-4aee-b002-b4c6e69e3eaa/image.jpg">
+		</div>
+
+	</div>
+   
+   <!-- 푸터부분 포함 -->
+    <footer th:replace="include/footer.html"></footer>
+   
+   <script src="../js/home.js"></script>
+</body>
+
+
+</html>

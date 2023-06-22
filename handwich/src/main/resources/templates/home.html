@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+	<!-- header.html 파일을 포함 -->
+	<header th:replace="include/header.html"></header>
+	<!-- 내용부분 --------------------------------------------------->
+	<!-- 이미지 자동 변경  -->
+	<div class="slide_div">
+		<div class="slider">
+			<div class="slide_viewer">
+				<div class="slide_group">
+					<div class="slide">
+						<img
+							src="https://velog.velcdn.com/images/taeeuno_o/post/d4a70503-a625-418f-be05-53db4e72d833/image.png">
+					</div>
+					<div class="slide">
+						<img
+							src="https://velog.velcdn.com/images/taeeuno_o/post/07c03795-a0a9-4c7b-a4b3-56929f231a5a/image.png">
+					</div>
+					<div class="slide">
+						<img
+							src="https://velog.velcdn.com/images/taeeuno_o/post/6ea93b5c-c88d-48cc-982a-388e56443d39/image.png">
+					</div>
+					<div class="slide"></div>
+				</div>
+			</div>
+		</div>
+		<!-- End // .slider -->
+
+		<div class="slide_buttons"></div>
+
+
+		<!-- End // .directional_nav -->
+	</div>
+	<div class=" nav_button_div">
+		<div class="information_btn">
+			<a href="information"> <span class="material-symbols-outlined">clinical_notes</span>
+				<br> <a>회사소개</a>
+			</a>
+		</div>
+		<div class="business_btn">
+			<a href="business"><span class="material-symbols-outlined">
+					query_stats </span><br> <a>사업소개</a></a>
+		</div>
+		<div class="service_btn">
+			<a href="service"><span class="material-symbols-outlined">
+					support_agent </span><br> <a>고객센터</a></a>
+		</div>
+	</div>
+
+
+	<ul class="box-flow">
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/cd6cfb50-ee0c-4e4f-a6db-b28bb4545fb0/image.png"
+				alt="삼성카드" /></a></li>
+
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/1665c562-ecaa-4ad0-91e9-cead2d4ab7d2/image.png"
+				alt="롯데카드" /></a></li>
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/cb833630-2ade-48c7-9514-66120c759904/image.png"
+				alt="KB국민카드" /></a></li>
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/422c9b50-061c-4b40-9564-78510433683f/image.png"
+				alt="SKsignet" /></a></li>
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/300882af-6ec7-46d2-a4ce-d662cae95572/image.png"
+				alt="LG U+" /></a></li>
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/d1d262e3-0862-45c3-a60e-fcfd45767a3b/image.png"
+				alt="KT" /></a></li>
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/9d5d15d7-a6fe-41f5-aa3b-aa65b282c039/image.png"
+				alt="미래에셋" /></a></li>
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/6b60b8cc-f97f-4725-8991-1b3e67822aec/image.png"
+				alt="아모레퍼시픽" /></a></li>
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/0d1acbaf-2cb0-4dcb-b05d-4b82b8afaddd/image.png"
+				alt="신한은행" /></a></li>
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/4e94def5-783e-4ee6-86fb-ad1023eb1a01/image.png"
+				alt="하나은행" /></a></li>
+		<li><a><img
+				src="https://velog.velcdn.com/images/taeeuno_o/post/368e9bd7-6fc0-4a68-9ee0-66d84e27dd93/image.png"
+				alt="KDB산업은행" /></a></li>
+	</ul>
+
+	<div class="4box_div">
+		<div class="2box_div">
+			<div class="box1">
+				<a>TECHNOLOGY</a>
+			</div>
+			<div class="box2">
+				<a>SYSTEM AUTOMATION</a>
+			</div>
+		</div>
+		<div class="2box_div">
+			<div class="box3">
+				<a>SYSTEM DESIGN</a>
+			</div>
+			<div class="box4">
+				<a>DATA ANALYZE</a>
+			</div>
+		</div>
+	</div>
+	<!-- 푸터부분 포함 -->
+	<footer th:replace="include/footer.html"></footer>
+
+	<script src="../js/home.js"></script>
+</body>
+
+
+</html>

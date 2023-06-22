@@ -1,0 +1,47 @@
+/* 데스크탑 */
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	/*background-color: #4AB34A;*/
+	font-family: 'STIX Two Math';
+	margin_bottom: 100px;
+}
+
+.big_box {
+	border: 1px solid red;
+	margin: 100px auto;
+	width: fit-content;
+}
+
+
+#id{
+	width: 400px;
+	height:40px;
+	border: 1px solid pink;
+}
+
+#password{
+	width: 400px;
+	height:40px;
+	border: 1px solid blue;
+}
+.signup_div{
+	 text-align: right;
+}   
+#login_btn {
+  width: 100% !important;
+  height:45px;
+  background-color:#87CEFA;
+  border:none;
+}
+/*=============================================================*/
+@media screen and (max-width:1199px) { /* 타블렛 가로 */
+}
+
+@media screen and (max-width:899px) { /* 모바일 가로, 타블렛 세로 */
+}
+
+@media screen and (max-width:599px) { /* 모바일 세로 */
+}
