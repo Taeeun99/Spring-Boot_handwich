@@ -1,25 +1,73 @@
 <html>
 <head>
-<title>Home</title>
+<title>business</title>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<link rel="stylesheet" href="../css/business/business_info.css">
 </head>
-
-  
-
- 
 <body>
- <!-- 헤더부분 -------------------------------------------------->
- <header th:replace="include/header.html"></header>
-   <!-- 내용부분 ------------------------------------------------------>
-   <!-- 이미지 자동 변경  -->
-   <div class = "slide_box">
-사업소개 페이지지
 
-   </div>
-</body>  
-   <!-- 푸터 부분 jsp -------------------------------------------------->
-   <jsp:include page="/WEB-INF/views/include/footer.jsp" />
+	<!-- 헤더부분 -------------------------------------------------->
+	<header th:replace="include/header.html"></header>
+	<!-- 내용부분 ------------------------------------------------------>
+	<div class="business_info_div">
+		<img
+			src="https://velog.velcdn.com/images/taeeuno_o/post/5494a2eb-f9b8-431f-8cb1-bf318fc79973/image.png">
+		<div class = "business_info_text">
+			<div class="business_info_title">사업 소개</div>
+			<br>
+			<br>
+			<div class="business_info_intro">
+				핸드위치는 검증된 기술력과 노하우를 갖춘 전문인력과 함께 <br>고객사의 서비스 가치와 업무 효율성을 높이기 위한
+				다양한 부가서비스 시스템을 구축하고 있으며 <br>마이데이터 표준 V2 신규 적용 등 신사업을 전개하고 있습니다.
+				<br>또한, 국/내외 글로벌 IT 기업과 국내 공공/금융 기업들을 대상으로 한 다수의 프로젝트 경험과 서비스
+				노하우를 바탕으로 <br>솔루션을 자체 개발하고 있으며 차별화된 서비스와 경쟁력을 확보하고 있습니다. <br>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div class="company_core_div">
+		<div class="company_core_title">회사 핵심 요소</div>
+		<br>
+		<div>마이데이터 구축 전문 기업</div>
+		<div>마이데이터 구축 전담팀 보유</div>
+		<div>우리은행, 웰컴 저축 은행, 미래에셋생명 구축 인력 및 기술 보유</div>
+	</div>
+	<div class="our_goal_div">
+		<div class="our_goal_title">OUR GOAL</div>
+		<br>
+		<div>다양한 분야에서 IT Total Service 제공을 위한 최상의 사업 역량 보유해 고객에게 최상의 가치를
+			제공합니다.</div>
+	</div>
+
+	<div class="core_business_unit_div">
+		<div class="core_business_unit_title">핵심 사업 부서</div>
+		<br>
+		<div class="core_business_unit_1">
+			<div class="my_data_lab">마이데이터 연구소</div>
+			<div class="my_data_lab_01">01 MTDATA 구축 기술 전담반</div>
+			<div class="my_data_lab_02">02 MYDATA 표준 API 버전 최신화</div>
+			<div class="my_data_lab_03">03 MYDATA PROCESS 최적화</div>
+			<div class="my_data_lab_04">04 MYDATA 개신 신용 정보 보안 적재</div>
+			<div class="my_data_lab_05">05 MYDATA 최적화 관리자 기능 제공</div>
+		</div>
+		<br>
+		<div class="core_business_unit_2">
+			<div class="IT_service">IT 서비스 사업 본부</div>
+			<div class="IT_service_01">01 차세대 고도화 등 전담반</div>
+			<div class="IT_service_02">02 채널계 (PC/MO) 및 업무 시스템 구축 / 운영</div>
+			<div class="IT_service_03">03 카드(신용/체크/선불) 서비스</div>
+			<div class="IT_service_04">04 멤버쉽(포인트/마일리지) 서비스</div>
+			<div class="IT_service_05">05 공공(전자조달/국가 R&D) 서비스</div>
+			<div class="IT_service_06">06 솔루션 및 제휴 서비스</div>
+		</div>
+
+	</div>
+</body>
+<!-- 푸터 부분 jsp -------------------------------------------------->
+<!-- 푸터부분 포함 -->
+<footer th:replace="include/footer.html"></footer>
 
 
 </html>
