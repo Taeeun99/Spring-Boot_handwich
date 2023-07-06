@@ -1,44 +1,29 @@
-
 /* 데스크탑 */
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
 body {
-   background-color: #4AB34A;
-   font-family: 'STIX Two Math';
+	/*background-color: #4AB34A;*/
+	font-family: 'STIX Two Math';z
+	margin_bottom: 100px;
+}
+.form_div{
+	border:1px solid red;
+	margin:40px auto;
+	width:fit-content;
+	
 }
 
-/* 타블렛  가로 */
-@media ( max-width :1199px) {
-   body {
-      background-color: #FFFF8C;
-      h1: after{
-   }
+/*=============================================================*/
+
+
+@media screen and (max-width:1199px) { /* 타블렛 가로 */
 }
+
+@media screen and (max-width:899px) { /* 모바일 가로, 타블렛 세로 */
 
 }
 
-/* 모바일 가로, 타블렛 세로 */
-@media ( max-width :899px) {
-   body {
-      background-color: #FF8200;
-   }
+@media screen and (max-width:599px) { /* 모바일 세로 */
 }
-
-/* 모바일 세로 */
-@media ( max-width :599px) {
-   body {
-      background-color: #FF0000;
-   }
-}
-
-.home_main_img {
-   width: 100%;
-}
-
-.main_img_ani img {
-   width: 100%;
-}
-
-/*이미지 자동 변경*/
-.slide_box img{
-width:100%;
-}
-
