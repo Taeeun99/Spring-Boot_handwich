@@ -12,6 +12,7 @@ import javax.persistence.Table;
 import org.hibernate.type.TrueFalseType;
 
 import com.handwich.demo.dto.BoardDTO;
+import com.handwich.demo.repository.BoardRepository;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -36,9 +37,9 @@ public class BoardEntity extends BaseEntity{
 	
 	@Column
 	private String boardTitle;
-	
+	 
 	@Column(length = 500)
-	private String boardContent;
+	private String boardContents;
 	
 	@Column
 	private int boardHits;
@@ -46,15 +47,31 @@ public class BoardEntity extends BaseEntity{
 	
 	public static BoardEntity toSaveEntity(BoardDTO boardDTO) {
 		BoardEntity boardEntity = new BoardEntity();
+		boardEntity.setId(boardDTO.getId());  //업데이트 수 를 전달
 		boardEntity.setBoardWriter(boardDTO.getBoardWriter());
 		boardEntity.setBoardPass(boardDTO.getBoardPass());
 		boardEntity.setBoardTitle(boardDTO.getBoardTitle());
-		boardEntity.setBoardContent(boardDTO.getBoardContents());
+		boardEntity.setBoardContents(boardDTO.getBoardContents());
 		boardEntity.setBoardHits(0);
 		return boardEntity;
 		
 	
 	}
+	
+
+    public static BoardEntity toUpdateEntity(BoardDTO boardDTO) {
+        BoardEntity boardEntity = new BoardEntity();
+        boardEntity.setId(boardDTO.getId());
+        boardEntity.setBoardWriter(boardDTO.getBoardWriter());
+        boardEntity.setBoardPass(boardDTO.getBoardPass());
+        boardEntity.setBoardTitle(boardDTO.getBoardTitle());
+        boardEntity.setBoardContents(boardDTO.getBoardContents());
+        boardEntity.setBoardHits(boardDTO.getBoardHits());
+        return boardEntity;
+    }
+
+
+
 	
 	
 }
