@@ -96,7 +96,7 @@ public class BoardController {
 		model.addAttribute("boardList" , boardList); 
 		model.addAttribute("startPage", startPage);
 		model.addAttribute("endPage",endPage);
-		return "paging";
+		return "board/paging";
 		
 
 	}
